@@ -60,10 +60,24 @@
 
 // document.write("<h1>Hello Tharaka</h1>");
 
-console.log(document);
+//console.log(document);
 
 let heading =document.getElementById("heading");
-console.log(heading);
+
+let count = 0;
+
+
+// heading.innerText = "Hello Tharaka";
 
 
 
+function incrimentHeading(){
+    count++;
+    heading.innerText = "Hello Tharaka" + count;
+    console.log("clicked");
+}
+function decrimentHeading(){
+    count--;
+    heading.innerText = "Hello Tharaka" + count;
+    console.log("clicked");
+}
