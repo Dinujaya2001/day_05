@@ -1,26 +1,56 @@
-class Customer{
-    name;
-    age;
-    address;
-    city;
+// class Customer{
+//     name;
+//     age;
+//     address;
+//     city;
 
 
-    constructor(name,age,address,city){
-        this.name = name;
-        this.age = age;
-        this.address = address;
-        this.city = city;
-    }
-}
+//     constructor(name,age,address,city){
+//         this.name = name;
+//         this.age = age;
+//         this.address = address;
+//         this.city = city;
+//     }
+// }
 
-let customer = new Customer("Tharaka",25,"No 12, Galle Road","Galle");
-console.log(customer);
+// let customer = new Customer("Tharaka",25,"No 12, Galle Road","Galle");
+// console.log(customer);
 
 
 let customer2 = {
     name: "Tharaka",
     age: 25,
     address: "No 12, Galle Road",
-    city: "Galle"
+    city: "Galle",
+    items:[{
+        id:1,
+        name:"items1",
+        price:1500,
+        varites:[{
+            id:1,
+            name:"varites1",
+            price:500
+        }]
+    },{
+        id:2,
+        name:"items2",
+        price:2500
+    
+    },{
+        id:3,
+        name:"items3",
+        price:3500
+    }],
+    father:{
+        name:"Anurasiri",
+        age:66,
+        address:"No 12, Galle Road",
+        city:"Galle"
+    }
 };
-console.log(customer2);
+console.log(customer2.name);
+console.log(customer2.age);
+console.log(customer2.address);
+console.log(customer2.city);
+console.log(customer2.items[0].varites[0].price);
+console.log(customer2.father.name);
