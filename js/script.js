@@ -35,7 +35,7 @@
 //         id:2,
 //         name:"items2",
 //         price:2500
-    
+
 //     },{
 //         id:3,
 //         name:"items3",
@@ -62,22 +62,49 @@
 
 //console.log(document);
 
-let heading =document.getElementById("heading");
+// let heading =document.getElementById("heading");
 
-let count = 0;
-
-
-// heading.innerText = "Hello Tharaka";
+// let count = 0;
 
 
+// // heading.innerText = "Hello Tharaka";
 
-function incrimentHeading(){
-    count++;
-    heading.innerText = "Hello Tharaka" + count;
-    console.log("clicked");
+
+
+// function incrimentHeading(){
+//     count++;
+//     heading.innerText = "Hello Tharaka" + count;
+//     console.log("clicked");
+// }
+// function decrimentHeading(){
+//     count--;
+//     heading.innerText = "Hello Tharaka" + count;
+//     console.log("clicked");
+// }
+
+// function changeHeading() {
+//     let inputText = document.getElementById("inputText").value;
+//     heading.innerText = inputText;
+
+
+// }
+
+
+function addition() {
+    let num1 = document.getElementById("num1").value;
+    let num2 = document.getElementById("num2").value;
+    let output = document.getElementById("heading");
+
+    let result = parseInt(num1) + parseInt(num2);
+    output.innerText = result;
+
 }
-function decrimentHeading(){
-    count--;
-    heading.innerText = "Hello Tharaka" + count;
-    console.log("clicked");
+function subtraction() {
+    let num1 = document.getElementById("num1").value;
+    let num2 = document.getElementById("num2").value;
+    let output = document.getElementById("heading");
+
+    let result = parseInt(num1) - parseInt(num2);
+    output.innerText = result;
+
 }
