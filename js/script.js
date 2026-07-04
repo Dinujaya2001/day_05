@@ -58,8 +58,12 @@
 
 //DOM(Document Object Model) Manipulation --------------------------------------------------
 
-document.write("<h1>Hello Tharaka</h1>");
+// document.write("<h1>Hello Tharaka</h1>");
 
 console.log(document);
+
+let heading =document.getElementById("heading");
+console.log(heading);
+
 
 
